@@ -28,7 +28,6 @@ public class NoticiaDAO {
             String hql = "from Noticia";
             Query query = session.createQuery(hql);
             noticias = query.list();
-            
             session.close();
         }catch(HibernateException e){
             System.out.println("Error al conectar con Hibernate");

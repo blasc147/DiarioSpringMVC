@@ -10,11 +10,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Noticias</title>
     </head>
     <body>
         <h1>Lista de noticias</h1>
-    <tr><td>titulo</td><td>descripcion</td></tr>
+        <table>
+        <tr>
+            <td>titulo</td>
+            <td>descripcion</td>
+        </tr>
     <%-- Los items estan definidos en el controlador--%>
     <c:forEach var="noticia" items="${noticias}">
         <tr>
@@ -23,5 +27,6 @@
         </tr>
         
     </c:forEach>
+        </table>
     </body>
 </html>

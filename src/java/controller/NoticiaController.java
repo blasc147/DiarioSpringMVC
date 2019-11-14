@@ -22,7 +22,8 @@ public class NoticiaController implements Controller{
 
     @Override
     public ModelAndView handleRequest(HttpServletRequest hsr, HttpServletResponse hsr1) throws Exception {
-        ModelAndView mv = new ModelAndView("noticias");
+        //ese nombre que se define tiene que coincidir con la pagina jsp
+        ModelAndView mv = new ModelAndView("index");
         
         try{
             List<Noticia> noticias = NoticiaDAO.listar();
