@@ -24,6 +24,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="noticias.htm">noticiaController</prop>
+                <prop key="nuevaNoticia.htm">noticiaController</prop>
             </props>
         </property>
     </bean>
